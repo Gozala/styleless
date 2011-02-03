@@ -22,7 +22,7 @@ exports['test variables'] = function (assert) {
     '}',
     'h2 {',
     '    color: #4D926F;',
-    '}'
+    '}\n'
   ].join('\n')
 
   assert.equalText(actual, expected, 'testing varibales')
@@ -58,7 +58,7 @@ exports['test mixins'] = function (assert) {
     '    -webkit-border-radius: 10px;',
     '    -moz-border-radius: 10px;',
     '    background: blue;',
-    '}'
+    '}\n'
   ].join('\n')
 
   assert.equalText(actual, expected, 'testing mixins')
@@ -99,7 +99,7 @@ exports['test nested'] = function (assert) {
     '}',
     '#header p a:hover {',
     '    border-width: 1px;',
-    '}'
+    '}\n'
   ].join('\n')
 
   assert.equalText(actual, expected, 'nested rules')
@@ -119,4 +119,4 @@ exports['test nested'] = function (assert) {
 }
 */
 
-if (require.main = module) require('test').run(exports)
+if (require.main == module) require('test').run(exports)
