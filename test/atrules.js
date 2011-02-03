@@ -7,7 +7,7 @@ exports.Assert = require('./assert').Assert
 
 exports['test media screen'] = function(assert) {
   var media = Style({
-    '@import': 'include.css',
+    '@import': '"include.css"',
     '@media screen': {
       head: {
         p: {
@@ -18,7 +18,7 @@ exports['test media screen'] = function(assert) {
   })
   var actual = media.toString()
   var expected = [
-    '@import include.css',
+    '@import "include.css"',
     '@media screen {',
     'head p {',
     '    color: red;',

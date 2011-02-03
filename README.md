@@ -117,4 +117,28 @@ var nestedRules = Style({
 }
       </pre>
   </tr>
+  <tr>
+    <td>
+      <pre>
+var atRules = Style({
+  '@import': '"include.css"',
+  '@media screen': {
+   head: {
+       p: {
+           color: 'red'
+       }
+   }
+})
+      </pre>
+    </td>
+    <td>
+      <pre>
+@import "include.css"
+@media screen {
+head p {
+    color: red;
+}
+}
+      </pre>
+  </tr>
 </table>

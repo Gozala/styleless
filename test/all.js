@@ -1,6 +1,6 @@
 'use strict'
 
 exports['test simple'] = require('./simple')
-exports['test media'] = require('./media')
+exports['test at-rules'] = require('./atrules')
 
 if (module == require.main) require('test').run(exports)
