@@ -105,18 +105,4 @@ exports['test nested'] = function (assert) {
   assert.equalText(actual, expected, 'nested rules')
 }
 
-/*
- Style({
-  '@media screen': Style({
-    head: { color: 'red' }
-  })
-})
-
-@media screen {
-  head {
-    color: 'red';
-  }
-}
-*/
-
 if (require.main == module) require('test').run(exports)
