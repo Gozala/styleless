@@ -1,7 +1,11 @@
-// vim:ts=2:sts=2:sw=2:
-'use strict'
+/* vim:set ts=2 sw=2 sts=2 expandtab */
+/*jshint asi: true undef: true es5: true node: true devel: true
+         forin: true latedef: false globalstrict: true */
+/*global define: true */
 
-var Style = require('styleless').Style
+'use strict';
+
+var Style = require('../styleless').Style
 
 exports.Assert = require('./assert').Assert
 exports['test variables'] = function (assert) {
